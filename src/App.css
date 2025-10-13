@@ -1,0 +1,92 @@
+.App {
+  /* text-align: center; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*custom CSS*/
+.ques-header {
+  background-color: #b9c3d8;
+  text-align: center;
+  padding: 1rem;
+  width: 75%;
+  margin: 1rem auto;
+  border-radius: 10px;
+  border: solid 1px #202020;
+  border: #282c34;
+
+}
+.section-a, .section-b {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem
+}
+.section-a-header, .section-b-header {
+  text-align: center;
+
+}
+.ques-no-1, .ques-no-2, .ques-no-3, .ques-no-4, .ques-no-5, .ques-no-6, .ques-no-7, .ques-no-8 
+{
+  border: solid 1px #b9c3d8;
+  padding: 1rem;
+  margin: 1rem; 
+  border-radius: 1px;
+  background-color: #eeeb48;
+  border-style: dotted;
+  box-shadow: #282c34;
+}
+.ans-no-1, .ans-no-2, .ans-no-3, .ans-no-4, .ans-no-5, .ans-no-6, .ans-no-7, .ans-no-8 
+{
+  border: solid 1px #b9c3d8;
+  padding: 1rem;
+  margin: 1rem; 
+  border-radius: 1px;
+  background-color: #e3f3f2;
+  border-style: dotted;
+  box-shadow: #282c34;
+}
+.credit{
+  text-align: center;
+  font-size: 12px;
+  padding: 1rem;
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  background-color: #e3f3f2;
+  border: solid 1px #202020;
+  width: 25%;
+}

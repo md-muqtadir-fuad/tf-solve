@@ -1,0 +1,89 @@
+# ## Operating Systems ##
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+__MACOSX
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.swp
+.swo
+
+# ## IDEs/Editors ##
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ## Dependency Dirs ##
+node_modules/
+vendor/
+bower_components/
+jspm_packages/
+
+# ## Build & Compiled ##
+# Compiled code and build artifacts
+build/
+dist/
+out/
+target/
+bin/
+*.o
+*.so
+*.dll
+*.class
+*.jar
+*.war
+*.ear
+
+
+# ## Log Files ##
+
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# ## Sensitive Data ##
+
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+credentials.json
+secrets.yml
+
+# ## Other ##
+
+coverage/
+junit.xml
+.nyc_output/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.old
