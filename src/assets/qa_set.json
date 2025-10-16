@@ -1,75 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-import QA from './components/QA'
-import React from 'react';
-import parse from 'html-react-parser'; 
-import q1i1 from './assets/qa_img/22-23_ipe_ipe451_q1-i1.png';
-
-const qa_set = [
+[
   {
-    id: "IPE 451",
-    dept_name: "Industrial and Production Engineering",
-    course_name: "Supply Chain Management",
-    credits: "3",//credit hour
-    term: "4-1",
-    credit: "Fahmid Abdullah (IPE 20)",
-    qa_pairs:[
+    "id": "IPE 451",
+    "dept_name": "Industrial and Production Engineering",
+    "course_name": "Supply Chain Management",
+    "credits": "3",
+    "term": "4-1",
+    "credit": "Fahmid Abdullah (IPE 20)",
+    "qa_pairs":[
       {
-        question: [
+        "question": [
           "Managers must take two key decision when designing a distribution network. What are those two key decisions? With respect to these two key decisions, in case of Bangladesh Drug (medicine) distribution, what will be your decisions? Justify your answer.",
           "Grocery chains Webvan, Peapod, and Albertsons have used this distribution network in their business. Probably, the same distribution network will be useful for a grocery company in Dhaka city. What distribution network is this? Explain its operation with right diagram."
         ],
-        answer:
-        ` <p>For drug (medicine) distribution in Bangladesh, the primary choice should be "Retail Storage with Customer Pickup"
-            (pharmacies as stocking points). Medicines are time-sensitive and often urgent; customers want immediate access.
-            Pickup at licensed pharmacies also enables prescription verification, pharmacist counseling and quick substitution
-            if a brand is unavailable. Keeping stock locally shortens response time, reduces quality risks (cold-chain items
-            like insulin and vaccines) and simplifies returns.
-            Although it raises inventory and facility cost, the higher cost is justified
-            by the criticality of availability and the high turns of fast-moving drugs in
-            dense urban areas.</p>
-        <img src="${q1i1}" width="50%" style="display: block; margin: auto;" alt="Distribution Network Diagram">
-        <p>
-            For non-urgent medicines (e.g., long-term therapy refills) where customers may order online and can wait for 2–3
-            days, a complementary channel is “Distributor Storage with Carrier Delivery”. Centralizing more inventory at
-            distributor warehouses lowers total inventory and ensures higher variety than retail storage.
-        </p>
-        <p>
-            From the B2B perspective, replenishing pharmacies/hospitals (customers) works well with “Distributor Storage with
-            Last-Mile Delivery”. Wholesaler fleets can run scheduled milk runs to stores in bulk, cutting per-unit transport
-            cost, keeping shelf availability high efficiently.
-        </p>
-        <p>
-            In short, I'd choose customer pickup from pharmacies and flow through intermediaries (distributors/wholesalers) as
-            the core network for patient-facing demand, while adding online delivery as an option and last-mile wholesaler
-            delivery for store replenishment when considering the whole distribution system. <i>[Section 4.3, Page 80-91]</i>
-        </p>
-      `
+        "answer":
+        "<p>For drug (medicine) distribution in Bangladesh, the primary choice should be \\\"Retail Storage with Customer Pickup\\\" (pharmacies as stocking points). Medicines are time-sensitive and often urgent; customers want immediate access. Pickup at licensed pharmacies also enables prescription verification, pharmacist counseling and quick substitution if a brand is unavailable. Keeping stock locally shortens response time, reduces quality risks (cold-chain items like insulin and vaccines) and simplifies returns. Although it raises inventory and facility cost, the higher cost is justified by the criticality of availability and the high turns of fast-moving drugs in dense urban areas.</p> <img src=\\\"\\\" width=\\\"50%\\\" style=\\\"display: block; margin: auto;\\\" alt=\\\"Distribution Network Diagram\"> <p> For non-urgent medicines (e.g., long-term therapy refills) where customers may order online and can wait for 2–3 days, a complementary channel is \"Distributor Storage with Carrier Delivery\". Centralizing more inventory at distributor warehouses lowers total inventory and ensures higher variety than retail storage. </p> <p> From the B2B perspective, replenishing pharmacies/hospitals (customers) works well with \\\"Distributor Storage with Last-Mile Delivery\\\". Wholesaler fleets can run scheduled milk runs to stores in bulk, cutting per-unit transport cost, keeping shelf availability high efficiently. </p> <p> In short, I'd choose customer pickup from pharmacies and flow through intermediaries (distributors/wholesalers) as the core network for patient-facing demand, while adding online delivery as an option and last-mile wholesaler delivery for store replenishment when considering the whole distribution system. <i>[Section 4.3, Page 80-91]</i> </p>"
       },
       {
-        question: [
+        "question": [
           "Managers must take two key decision when designing a distribution network. What are those two key decisions? With respect to these two key decisions, in case of Bangladesh Drug (medicine) distribution, what will be your decisions? Justify your answer.",
           "Grocery chains Webvan, Peapod, and Albertsons have used this distribution network in their business. Probably, the same distribution network will be useful for a grocery company in Dhaka city. What distribution network is this? Explain its operation with right diagram."
         ],
-        answer:
+        "answer":
         "<p>For drug (medicine) distribution in Bangladesh, the primary choice should be \\\"Retail Storage with Customer Pickup\\\" (pharmacies as stocking points). Medicines are time-sensitive and often urgent; customers want immediate access. Pickup at licensed pharmacies also enables prescription verification, pharmacist counseling and quick substitution if a brand is unavailable. Keeping stock locally shortens response time, reduces quality risks (cold-chain items like insulin and vaccines) and simplifies returns. Although it raises inventory and facility cost, the higher cost is justified by the criticality of availability and the high turns of fast-moving drugs in dense urban areas.</p> <img src=\\\"\\\" width=\\\"50%\\\" style=\\\"display: block; margin: auto;\\\" alt=\\\"Distribution Network Diagram\"> <p> For non-urgent medicines (e.g., long-term therapy refills) where customers may order online and can wait for 2–3 days, a complementary channel is \"Distributor Storage with Carrier Delivery\". Centralizing more inventory at distributor warehouses lowers total inventory and ensures higher variety than retail storage. </p> <p> From the B2B perspective, replenishing pharmacies/hospitals (customers) works well with \\\"Distributor Storage with Last-Mile Delivery\\\". Wholesaler fleets can run scheduled milk runs to stores in bulk, cutting per-unit transport cost, keeping shelf availability high efficiently. </p> <p> In short, I'd choose customer pickup from pharmacies and flow through intermediaries (distributors/wholesalers) as the core network for patient-facing demand, while adding online delivery as an option and last-mile wholesaler delivery for store replenishment when considering the whole distribution system. <i>[Section 4.3, Page 80-91]</i> </p>"
-      
       }
     ]
   }
-];
-
-function App() {
-  return (
-    <div className="App">
-      {
-        qa_set.map((data, index) => (
-          <React.Fragment key={index}>
-            <QA item={data} />
-          </React.Fragment>
-        ))}
-    </div>
-  );
-}
-
-export default App;
+]
